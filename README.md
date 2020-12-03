@@ -2,6 +2,12 @@
 
 Disclaimer: This component was built by the community at large and is not an official Coveo JSUI Component. Use this component at your own risk.
 
+The NoResultsMessage simply displays a message when no results are present. To modify the message displayed, just use the `data-text` option as such:
+
+```html
+ <div class="CoveoNoResultsMessage" data-text="My Custom message here"></div>
+```
+
 ## Getting Started
 
 1. Install the component into your project.
