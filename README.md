@@ -8,6 +8,20 @@ The NoResultsMessage simply displays a message when no results are present. To m
  <div class="CoveoNoResultsMessage" data-text="My Custom message here"></div>
 ```
 
+A different message can also be specified for a list of tabs or exluded for a list of tabs. To specify different messages by tabs, just use the `tabs` and `notTabs` options as follows.
+
+The message will only show when there are no results on Tab1 or Tab2.
+
+```html
+ <div class="CoveoNoResultsMessage" data-text="My Custom message here" data-tabs="Tab1, Tab2"></div>
+```
+
+The message will show on all tabs except on Tab1 and Tab2.
+
+```html
+ <div class="CoveoNoResultsMessage" data-text="My Custom message here" data-not-tabs="Tab1, Tab2"></div>
+```
+
 ## Getting Started
 
 1. Install the component into your project.
