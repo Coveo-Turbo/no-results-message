@@ -3,8 +3,7 @@ import {
     IComponentBindings,
     IQuerySuccessEventArgs,
     QueryEvents,
-    ComponentOptions,
-    Dom,
+    ComponentOptions
 } from 'coveo-search-ui';
 import { lazyComponent } from '@coveops/turbo-core';
 
@@ -19,12 +18,10 @@ export class NoResultsMessage extends Component {
     static ID = 'NoResultsMessage';
 
     static options: NoResultsMessageOptions = {
-        text: ComponentOptions.buildStringOption(),
+        text: ComponentOptions.buildLocalizedStringOption( { localizedString: () => 'NoResultsMessage' }),
         tabs: ComponentOptions.buildListOption({ defaultValue: [] }),
         notTabs: ComponentOptions.buildListOption({ defaultValue: [] }),
     };
-
-    protected container: Dom;
 
     /**
      * Create a new ViewResults component
